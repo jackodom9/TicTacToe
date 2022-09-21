@@ -72,6 +72,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TicTacToeTwoPlayer.resx">
       <DependentUpon>TicTacToeTwoPlayer.cs</DependentUpon>
@@ -88,6 +89,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-o-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-horizontal-line-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vertical-line-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-line-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-line-901.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
