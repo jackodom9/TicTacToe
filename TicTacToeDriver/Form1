@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TicTacToeDriver
+{
+    public partial class TicTacToe : Form
+    {
+        public TicTacToe()
+        {
+            InitializeComponent();
+        }
+
+        private void twoPlayer_Click(object sender, EventArgs e)
+        {
+            TicTacToeTwoPlayer newGame = new TicTacToeTwoPlayer();
+            newGame.ShowDialog();
+        }
+    }
+}
