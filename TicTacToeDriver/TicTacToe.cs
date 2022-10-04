@@ -27,7 +27,7 @@ namespace TicTacToeDriver
         }
         public bool makeMove(int row, int col)
         {
-            if (!gameOver)
+            if (!gameOver && t3arr[row, col] == "-")
             {
                 if (player1)
                 {
@@ -68,7 +68,7 @@ namespace TicTacToeDriver
                     if (xCount == 3 || oCount == 3)
                     {
                         winner[0] = i;
-                        gameOver = !gameOver;
+                        gameOver = true;
                         return winner;
                     }
                 }
@@ -91,7 +91,7 @@ namespace TicTacToeDriver
                     if (xCount == 3 || oCount == 3)
                     {
                         winner[1] = i;
-                        gameOver = !gameOver;
+                        gameOver = true;
                         return winner;
                     }
                 }
@@ -114,7 +114,7 @@ namespace TicTacToeDriver
             {
                 winner[0] = 2;
                 winner[1] = 1;
-                gameOver = !gameOver;
+                gameOver = true;
                 return winner;
             }
             xCount = 0;
@@ -134,7 +134,7 @@ namespace TicTacToeDriver
             {
                 winner[0] = 2;
                 winner[1] = 2;
-                gameOver = !gameOver;
+                gameOver = true;
                 return winner;
             }
             return winner;

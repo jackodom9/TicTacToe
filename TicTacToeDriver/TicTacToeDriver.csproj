@@ -108,5 +108,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-line-901.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Bitmap1.bmp" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

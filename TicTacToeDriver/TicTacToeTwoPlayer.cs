@@ -20,7 +20,6 @@ namespace TicTacToeDriver
         public TicTacToeTwoPlayer()
         {
             InitializeComponent();
-            
         }
 
         private void topLeftBtn_Click(object sender, EventArgs e)
@@ -74,7 +73,51 @@ namespace TicTacToeDriver
         }
         private void winLine(int[] winner)
         {
-            MessageBox.Show("Congratulations!");
+            if (winner[0] == -1)
+            {
+                switch (winner[1])
+                {
+                    case 0:
+                        leftColWin.Visible = true;
+                        break;
+                    case 1:
+                        midColWin.Visible = true;
+                        break;
+                    case 2:
+                        rightColWin.Visible = true;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else if (winner[1] == -1)
+            {
+                switch(winner[0])
+                {
+                    case 0:
+                        topRowWin.Visible = true;
+                        break;
+                    case 1:
+                        midRowWin.Visible = true;
+                        break;
+                    case 2:
+                        botRowwin.Visible = true;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            if (winner[0] == 2)
+            {
+                if (winner[1] == 1)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
         }
 
         private void btnClickGeneric(object sender, EventArgs e, int row, int col)
