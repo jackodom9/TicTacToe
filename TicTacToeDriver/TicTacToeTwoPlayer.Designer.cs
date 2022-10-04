@@ -312,6 +312,7 @@
             this.Text = "TicTacToeTwoPlayer";
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.TicTacToeTwoPlayer_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.TicTacToeTwoPlayer_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.topRowWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.midRowWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botRowwin)).EndInit();

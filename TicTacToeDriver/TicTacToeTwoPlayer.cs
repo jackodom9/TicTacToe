@@ -71,54 +71,6 @@ namespace TicTacToeDriver
         {
             
         }
-        private void winLine(int[] winner)
-        {
-            if (winner[0] == -1)
-            {
-                switch (winner[1])
-                {
-                    case 0:
-                        leftColWin.Visible = true;
-                        break;
-                    case 1:
-                        midColWin.Visible = true;
-                        break;
-                    case 2:
-                        rightColWin.Visible = true;
-                        break;
-                    default:
-                        break;
-                }
-            }
-            else if (winner[1] == -1)
-            {
-                switch(winner[0])
-                {
-                    case 0:
-                        topRowWin.Visible = true;
-                        break;
-                    case 1:
-                        midRowWin.Visible = true;
-                        break;
-                    case 2:
-                        botRowwin.Visible = true;
-                        break;
-                    default:
-                        break;
-                }
-            }
-            if (winner[0] == 2)
-            {
-                if (winner[1] == 1)
-                {
-
-                }
-                else
-                {
-
-                }
-            }
-        }
 
         private void btnClickGeneric(object sender, EventArgs e, int row, int col)
         {
@@ -136,12 +88,26 @@ namespace TicTacToeDriver
                     btn.Image = Resources.icons8_x_100;
                 }
             }
-            int[] winner = game.winCheck();
+            string winner = game.winCheck();
             // either row win or diagonal win
-            if (winner[0] != -1 || winner[1] != -1)
+            if (winner != "-")
             {
-                winLine(winner);
+                if (winner == "X")
+                {
+                    MessageBox.Show("X Wins!");
+                    this.Close();
+                }
+
+                if (winner == "O")
+                {
+                    MessageBox.Show("O Wins!");
+                }
             }
+        }
+
+        private void TicTacToeTwoPlayer_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }
