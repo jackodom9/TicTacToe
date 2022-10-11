@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OnePlayerPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnePlayerPrompt.Designer.cs">
+      <DependentUpon>OnePlayerPrompt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TicTacToe.cs" />
@@ -61,14 +67,17 @@
     <Compile Include="TicTacToeTwoPlayer.Designer.cs">
       <DependentUpon>TicTacToeTwoPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="TikTokAI.cs">
+    <Compile Include="TicTacToeAI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TikTokAI.Designer.cs">
-      <DependentUpon>TikTokAI.cs</DependentUpon>
+    <Compile Include="TicTacToeAI.Designer.cs">
+      <DependentUpon>TicTacToeAI.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnePlayerPrompt.resx">
+      <DependentUpon>OnePlayerPrompt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,8 +92,8 @@
     <EmbeddedResource Include="TicTacToeTwoPlayer.resx">
       <DependentUpon>TicTacToeTwoPlayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TikTokAI.resx">
-      <DependentUpon>TikTokAI.cs</DependentUpon>
+    <EmbeddedResource Include="TicTacToeAI.resx">
+      <DependentUpon>TicTacToeAI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

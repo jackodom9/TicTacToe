@@ -1,6 +1,6 @@
 ﻿namespace TicTacToeDriver
 {
-    partial class TikTokAI
+    partial class TicTacToeAI
     {
         /// <summary>
         /// Required designer variable.

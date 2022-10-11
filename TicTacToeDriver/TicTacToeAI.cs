@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace TicTacToeDriver
 {
-    public partial class TikTokAI : Form
+    public partial class TicTacToeAI : Form
     {
         TicTacToe game = new TicTacToe();
-        public TikTokAI()
+        public TicTacToeAI(string side, int difficulty)
         {
             InitializeComponent();
         }

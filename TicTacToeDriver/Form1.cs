@@ -25,7 +25,8 @@ namespace TicTacToeDriver
 
         private void onePlayer_Click(object sender, EventArgs e)
         {
-
+            OnePlayerPrompt newPrompt = new OnePlayerPrompt();
+            newPrompt.ShowDialog();
         }
     }
 }
