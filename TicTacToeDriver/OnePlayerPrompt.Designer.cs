@@ -115,12 +115,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton xRadioButton;
-        private System.Windows.Forms.RadioButton oRadioButton;
-        private System.Windows.Forms.TrackBar difficultyTrackBar;
         private System.Windows.Forms.Button btnBegin;
         private System.Windows.Forms.Label sideLabel;
         private System.Windows.Forms.Label difficultyLabel;
+        private System.Windows.Forms.RadioButton xRadioButton;
+        private System.Windows.Forms.RadioButton oRadioButton;
+        private System.Windows.Forms.TrackBar difficultyTrackBar;
     }
 }

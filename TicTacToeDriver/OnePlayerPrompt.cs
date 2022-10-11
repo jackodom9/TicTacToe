@@ -19,7 +19,17 @@ namespace TicTacToeDriver
 
         private void btnBegin_Click(object sender, EventArgs e)
         {
-            TicTacToeAI newGame = new TicTacToeAI();
+            string playerSide = "";
+            int difficulty = difficultyTrackBar.Value;
+            if (xRadioButton.Checked)
+            {
+                playerSide = "X";
+            }
+            else
+            {
+                playerSide = "O";
+            }
+            TicTacToeAI newGame = new TicTacToeAI(playerSide, difficulty);
             newGame.ShowDialog();
         }
     }
