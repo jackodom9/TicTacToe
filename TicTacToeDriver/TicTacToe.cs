@@ -48,7 +48,7 @@ namespace TicTacToeDriver
         public string winCheck()
         {
             // check rows
-            string winner = "-";
+            string winner = "/";
             int xCount = 0;
             int oCount = 0;
             for (int i = 0; i < 3; i++)
@@ -160,6 +160,17 @@ namespace TicTacToeDriver
                 winner = "O";
                 gameOver = true;
                 return winner;
+            }
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (t3arr[i,j] == "-")
+                    {
+                        winner = "-";
+                        return winner;
+                    }
+                }
             }
             return winner;
         }

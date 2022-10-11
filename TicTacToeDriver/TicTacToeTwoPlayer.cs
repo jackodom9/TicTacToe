@@ -101,6 +101,7 @@ namespace TicTacToeDriver
                 if (winner == "O")
                 {
                     MessageBox.Show("O Wins!");
+                    this.Close();
                 }
             }
         }

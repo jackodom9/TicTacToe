@@ -205,7 +205,7 @@
             this.separator1.Size = new System.Drawing.Size(400, 2);
             this.separator1.TabIndex = 13;
             // 
-            // TikTokAI
+            // TicTacToeAI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -223,8 +223,9 @@
             this.Controls.Add(this.separator3);
             this.Controls.Add(this.separator2);
             this.Controls.Add(this.separator1);
-            this.Name = "TikTokAI";
+            this.Name = "TicTacToeAI";
             this.Text = "TikTokAI";
+            this.Load += new System.EventHandler(this.TicTacToeAI_Load);
             this.ResumeLayout(false);
 
         }
