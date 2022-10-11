@@ -61,6 +61,12 @@
     <Compile Include="TicTacToeTwoPlayer.Designer.cs">
       <DependentUpon>TicTacToeTwoPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="TikTokAI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TikTokAI.Designer.cs">
+      <DependentUpon>TikTokAI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="TicTacToeTwoPlayer.resx">
       <DependentUpon>TicTacToeTwoPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TikTokAI.resx">
+      <DependentUpon>TikTokAI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

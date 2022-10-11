@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicTacToeTwoPlayer));
             this.separator1 = new System.Windows.Forms.Label();
             this.separator2 = new System.Windows.Forms.Label();
             this.separator3 = new System.Windows.Forms.Label();
@@ -42,18 +41,6 @@
             this.botMidBtn = new System.Windows.Forms.Button();
             this.midLeftBtn = new System.Windows.Forms.Button();
             this.botLeftBtn = new System.Windows.Forms.Button();
-            this.topRowWin = new System.Windows.Forms.PictureBox();
-            this.midRowWin = new System.Windows.Forms.PictureBox();
-            this.botRowwin = new System.Windows.Forms.PictureBox();
-            this.leftColWin = new System.Windows.Forms.PictureBox();
-            this.midColWin = new System.Windows.Forms.PictureBox();
-            this.rightColWin = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.topRowWin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.midRowWin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.botRowwin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftColWin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.midColWin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightColWin)).BeginInit();
             this.SuspendLayout();
             // 
             // separator1
@@ -218,83 +205,11 @@
             this.botLeftBtn.UseVisualStyleBackColor = false;
             this.botLeftBtn.Click += new System.EventHandler(this.botLeftBtn_Click);
             // 
-            // topRowWin
-            // 
-            this.topRowWin.Image = ((System.Drawing.Image)(resources.GetObject("topRowWin.Image")));
-            this.topRowWin.Location = new System.Drawing.Point(188, 98);
-            this.topRowWin.Name = "topRowWin";
-            this.topRowWin.Size = new System.Drawing.Size(400, 13);
-            this.topRowWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.topRowWin.TabIndex = 13;
-            this.topRowWin.TabStop = false;
-            this.topRowWin.Visible = false;
-            // 
-            // midRowWin
-            // 
-            this.midRowWin.Image = ((System.Drawing.Image)(resources.GetObject("midRowWin.Image")));
-            this.midRowWin.Location = new System.Drawing.Point(188, 217);
-            this.midRowWin.Name = "midRowWin";
-            this.midRowWin.Size = new System.Drawing.Size(400, 14);
-            this.midRowWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.midRowWin.TabIndex = 14;
-            this.midRowWin.TabStop = false;
-            this.midRowWin.Visible = false;
-            // 
-            // botRowwin
-            // 
-            this.botRowwin.Image = ((System.Drawing.Image)(resources.GetObject("botRowwin.Image")));
-            this.botRowwin.Location = new System.Drawing.Point(188, 346);
-            this.botRowwin.Name = "botRowwin";
-            this.botRowwin.Size = new System.Drawing.Size(400, 14);
-            this.botRowwin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.botRowwin.TabIndex = 15;
-            this.botRowwin.TabStop = false;
-            this.botRowwin.Visible = false;
-            // 
-            // leftColWin
-            // 
-            this.leftColWin.Image = ((System.Drawing.Image)(resources.GetObject("leftColWin.Image")));
-            this.leftColWin.Location = new System.Drawing.Point(245, 31);
-            this.leftColWin.Name = "leftColWin";
-            this.leftColWin.Size = new System.Drawing.Size(14, 400);
-            this.leftColWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.leftColWin.TabIndex = 16;
-            this.leftColWin.TabStop = false;
-            this.leftColWin.Visible = false;
-            // 
-            // midColWin
-            // 
-            this.midColWin.Image = ((System.Drawing.Image)(resources.GetObject("midColWin.Image")));
-            this.midColWin.Location = new System.Drawing.Point(383, 31);
-            this.midColWin.Name = "midColWin";
-            this.midColWin.Size = new System.Drawing.Size(14, 400);
-            this.midColWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.midColWin.TabIndex = 17;
-            this.midColWin.TabStop = false;
-            this.midColWin.Visible = false;
-            // 
-            // rightColWin
-            // 
-            this.rightColWin.Image = ((System.Drawing.Image)(resources.GetObject("rightColWin.Image")));
-            this.rightColWin.Location = new System.Drawing.Point(523, 31);
-            this.rightColWin.Name = "rightColWin";
-            this.rightColWin.Size = new System.Drawing.Size(14, 400);
-            this.rightColWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rightColWin.TabIndex = 18;
-            this.rightColWin.TabStop = false;
-            this.rightColWin.Visible = false;
-            // 
             // TicTacToeTwoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.rightColWin);
-            this.Controls.Add(this.midColWin);
-            this.Controls.Add(this.leftColWin);
-            this.Controls.Add(this.botRowwin);
-            this.Controls.Add(this.midRowWin);
-            this.Controls.Add(this.topRowWin);
             this.Controls.Add(this.topRightBtn);
             this.Controls.Add(this.botLeftBtn);
             this.Controls.Add(this.midLeftBtn);
@@ -310,15 +225,9 @@
             this.Controls.Add(this.separator1);
             this.Name = "TicTacToeTwoPlayer";
             this.Text = "TicTacToeTwoPlayer";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.Turquoise;
             this.Load += new System.EventHandler(this.TicTacToeTwoPlayer_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.TicTacToeTwoPlayer_Paint);
-            ((System.ComponentModel.ISupportInitialize)(this.topRowWin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.midRowWin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.botRowwin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftColWin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.midColWin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightColWin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -338,11 +247,5 @@
         private System.Windows.Forms.Button botMidBtn;
         private System.Windows.Forms.Button midLeftBtn;
         private System.Windows.Forms.Button botLeftBtn;
-        private System.Windows.Forms.PictureBox topRowWin;
-        private System.Windows.Forms.PictureBox midRowWin;
-        private System.Windows.Forms.PictureBox botRowwin;
-        private System.Windows.Forms.PictureBox leftColWin;
-        private System.Windows.Forms.PictureBox midColWin;
-        private System.Windows.Forms.PictureBox rightColWin;
     }
 }

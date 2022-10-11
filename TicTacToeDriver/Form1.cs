@@ -22,5 +22,10 @@ namespace TicTacToeDriver
             TicTacToeTwoPlayer newGame = new TicTacToeTwoPlayer();
             newGame.ShowDialog();
         }
+
+        private void onePlayer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
