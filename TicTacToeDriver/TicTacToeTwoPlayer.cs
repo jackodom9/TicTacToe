@@ -95,12 +95,20 @@ namespace TicTacToeDriver
                 if (winner == "X")
                 {
                     MessageBox.Show("X Wins!");
+                    game.gameOver = true;
                     this.Close();
                 }
 
                 if (winner == "O")
                 {
                     MessageBox.Show("O Wins!");
+                    game.gameOver = true;
+                    this.Close();
+                }
+                if (winner == "/")
+                {
+                    MessageBox.Show("Draw!");
+                    game.gameOver = true;
                     this.Close();
                 }
             }

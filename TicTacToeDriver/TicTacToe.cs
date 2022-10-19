@@ -47,132 +47,72 @@ namespace TicTacToeDriver
         }
         public string winCheck()
         {
-            // check rows
-            string winner = "/";
-            int xCount = 0;
-            int oCount = 0;
-            for (int i = 0; i < 3; i++)
+            // check rows for victory game state
+            for (int row = 0; row < 3; row++)
             {
-                xCount = 0;
-                oCount = 0;
-                for (int j = 0; j < 3; j++)
+                if (t3arr[row, 0] == t3arr[row, 1] && t3arr[row, 1] == t3arr[row, 2])
                 {
-                    if (t3arr[i,j] == "X")
+                    if (t3arr[row, 0] == "X")
                     {
-                        xCount++;
+                        return "X";
                     }
-                    if (t3arr[i,j] == "O")
+                    else if (t3arr[row, 0] == "O")
                     {
-                        oCount++;
+                        return "O";
                     }
                 }
-                if (xCount == 3)
-                {
-                    winner = "X";
-                    gameOver = true;
-                    return winner;
-                }
-                if (oCount == 3)
-                {
-                    winner = "O";
-                    gameOver = true;
-                    return winner;
-                }
             }
-            // check columns
-            for (int i = 0; i < 3; i++)
+            // check columns for victory game state
+            for (int col = 0; col < 3; col++)
             {
-                xCount = 0;
-                oCount = 0;
-                for (int j = 0; j < 3; j++)
+                if (t3arr[0, col] == t3arr[1, col] && t3arr[1, col] == t3arr[2, col])
                 {
-                    if (t3arr[j, i] == "X")
+                    if (t3arr[0, col] == "X")
                     {
-                        xCount++;
+                        return "X";
                     }
-                    if (t3arr[j, i] == "O")
+                    else if (t3arr[0, col] == "O")
                     {
-                        oCount++;
+                        return "O";
                     }
                 }
-                if (xCount == 3)
-                {
-                    winner = "X";
-                    gameOver = true;
-                    return winner;
-                }
-                if (oCount == 3)
-                {
-                    winner = "O";
-                    gameOver = true;
-                    return winner;
-                }
             }
-            // check diagonals
-            xCount = 0;
-            oCount = 0;
-            for (int i = 0; i < 3; i++)
+            // check diagonals for victory game state
+            if (t3arr[0, 0] == t3arr[1, 1] && t3arr[1, 1] == t3arr[2, 2])
             {
-                if (t3arr[i, i] == "X")
+                if (t3arr[0, 0] == "X")
                 {
-                    xCount++;
+                    return "X";
                 }
-                if (t3arr[i, i] == "O")
+                else if (t3arr[0, 0] == "O")
                 {
-                    oCount++;
-                }
-
-            }
-            if (xCount == 3)
-            {
-                winner = "X";
-                gameOver = true;
-                return winner;
-            }
-            if (oCount == 3)
-            {
-                winner = "O";
-                gameOver = true;
-                return winner;
-            }
-
-            xCount = 0;
-            oCount = 0;
-            for (int i = 0; i < 3; i++)
-            {
-                if (t3arr[i, 2 - i] == "X")
-                {
-                    xCount++;
-                }
-                if (t3arr[i, 2 - 1] == "O")
-                {
-                    oCount++;
+                    return "O";
                 }
             }
-            if (xCount == 3)
+            if (t3arr[0, 2] == t3arr[1, 1] && t3arr[1, 1] == t3arr[2, 0])
             {
-                winner = "X";
-                gameOver = true;
-                return winner;
+                if (t3arr[1, 1] == "X")
+                {
+                    return "X";
+                }
+                else if (t3arr[1, 1] == "O")
+                {
+                    return "O";
+                }
             }
-            if (oCount == 3)
-            {
-                winner = "O";
-                gameOver = true;
-                return winner;
-            }
+            // check for remaining moves
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    if (t3arr[i,j] == "-")
+                    if (t3arr[i, j] == "-")
                     {
-                        winner = "-";
-                        return winner;
+                        return "-";
                     }
                 }
             }
-            return winner;
+            // If draw;
+            return "/";
         }
     }
 }
