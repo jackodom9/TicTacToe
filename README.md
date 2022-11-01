@@ -1,6 +1,6 @@
 # TicTacToe
 Simple TicTacToe program to play against another person or AI.
--- go into publish folder and click executable to play
+-- go into TicTacToe Driver class and download TicTacToeDriver.csproj to play
 
 -- pass and play mode
     - A mode in which two people at the same computer may play.
