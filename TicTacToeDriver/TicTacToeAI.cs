@@ -214,20 +214,23 @@ namespace TicTacToeDriver
                 {
                     if (winner == "X")
                     {
-                        MessageBox.Show("X Wins!");
+                        game.gameOver = true;
                         this.Close();
+                        MessageBox.Show("X Wins!");
                     }
 
                     if (winner == "O")
                     {
+                        game.gameOver = true;
+                        this.Close();
                         MessageBox.Show("O Wins!");
-                    this.Close();
                     }
                     if (winner == "/")
                 {
-                    MessageBox.Show("Draw!");
                     game.gameOver = true;
                     this.Close();
+                    MessageBox.Show("Draw!");
+                    
                 }
 
             }
