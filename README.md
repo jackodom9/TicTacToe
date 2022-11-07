@@ -1,7 +1,5 @@
 # TicTacToe
 Simple TicTacToe program to play against another person or AI.
--- go into bin folder and run executable to play
-
 -- pass and play mode
     - A mode in which two people at the same computer may play.
     
